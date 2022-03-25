@@ -1,0 +1,14 @@
+version: 0.0
+os: windows
+files:
+  - source: \
+    destination: C:\Users\Administrator\Downloads\Deploy
+hooks:
+  BeforeInstall:
+    - location: Deploy/clean.bat
+      runas: administrator
+ ApplicationStart:
+     - location: Deploy/run.bat       
+       runas: administrator
+
+
