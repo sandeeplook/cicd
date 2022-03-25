@@ -1,7 +1,7 @@
 version: 0.0
 os: windows
 files:
-  - source: \
+  - source: ./helloworldservice-0.0.1-SNAPSHOT.jar
     destination: C:\Users\Administrator\Downloads\Deploy
 hooks:
   BeforeInstall:
